@@ -1,0 +1,13 @@
+{
+  "name": "scraper-oficina-forum",
+  "version": "1.0.0",
+  "description": "Scraper automático para coletar tópicos do fórum Oficina Brasil.",
+  "main": "scrape.js",
+  "scripts": {
+    "start": "node scrape.js"
+  },
+  "dependencies": {
+    "googleapis": "^133.0.0",
+    "playwright": "^1.41.2"
+  }
+}
