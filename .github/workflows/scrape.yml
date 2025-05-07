@@ -15,7 +15,7 @@ jobs:
           node-version: 18
       - run: npm install
       - run: npx playwright install
-      - run: npm start
+      - run: node --openssl-legacy-provider scrape.js
         env:
           GOOGLE_SERVICE_ACCOUNT_EMAIL: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_EMAIL }}
           GOOGLE_PRIVATE_KEY: ${{ secrets.GOOGLE_PRIVATE_KEY }}
